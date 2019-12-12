@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+ int a[10],i,j,c;
+ for(i=0;i<=4;i++)
+ {
+     scanf("%d",&a[i]);
+ }
+ for(i=0;i<=4;i++)
+ {
+     for(j=i+1;j<=4;j++)
+     {
+         if(a[i]<a[j])
+         {
+             c=a[i];
+             a[i]=a[j];
+             a[j]=c;
+         }
+     }
+ }
+ printf("%d*%d+%d-%d/%d=%d",a[1],a[0],a[2],a[4],a[3],(a[1]*a[0]+a[2]-a[4]/a[3]));
+    return 0;
+}
