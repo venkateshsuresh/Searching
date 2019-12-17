@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,i=0,d[10],c=0,a,e=0,j,f;
+    scanf("%d",&n);
+    a=n;
+    f=n;
+    if(n%2==0)
+    {
+    while(n!=0)
+    {
+        c++;
+        n=n/10;
+    }
+    printf("%d\n",c);
+    for(i=0;i<c;i++)
+    {
+    d[i]=a%10;
+    printf("%d ",d[i]);
+    a=a/10;
+    }
+    for(i=0;i<c;i++)
+    {
+        
+          if(d[i]==d[i+1])
+          {
+              e++;
+          }
+        
+        
+    }
+        if(c==e+1)
+        {
+        printf("\n%d\n",f/2);
+    
+        }
+    }
+    return 0;
+}
